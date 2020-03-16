@@ -1,8 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaFacebook } from 'react-icons/fa';
-// import 'font-awesome/css/font-awesome.min.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebook,faTwitter,faGoogle,faLinkedin,faInstagram} from '@fortawesome/free-brands-svg-icons'
+import {faHome, faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
+// import { faFacebook } from '@fortawesome/free-brands-svg-icons' 
 
 let Footer =() => {
     return(
@@ -11,7 +12,7 @@ let Footer =() => {
 
             {/* <!-- Footer --> */}
             <footer className="page-footer font-small unique-color-dark" style={{backgroundColor: "#3E4551", color:"white"}}>
-
+            
             <div>
                 <div className="container-fluid"  style={{backgroundColor: "#6351ce"}}>
 
@@ -29,23 +30,23 @@ let Footer =() => {
 
                     {/* <!-- Facebook --> */}
                     <a className="fb-ic">
-                        <i className="fab fa-facebook-f white-text mr-4"> </i>
+                        <i class="white-text mr-4"><FontAwesomeIcon icon={faFacebook} /></i>
                     </a>
                     {/* <!-- Twitter --> */}
                     <a className="tw-ic">
-                        <i className="fab fa-twitter white-text mr-4"> </i>
+                        <i class="white-text mr-4"><FontAwesomeIcon icon={faTwitter} /></i>
                     </a>
                     {/* <!-- Google +--> */}
                     <a className="gplus-ic">
-                        <i className="fa fa-google-plus-g white-text mr-4"> </i>
+                        <i class="white-text mr-4"><FontAwesomeIcon icon={faGoogle} /></i>                        
                     </a>
                     {/* <!--Linkedin --> */}
                     <a className="li-ic">
-                        <i className="fab fa-linkedin-in white-text mr-4"> </i>
+                    <i class="white-text mr-4"><FontAwesomeIcon icon={faLinkedin} /></i>                        
                     </a>
                     {/* <!--Instagram--> */}
                     <a className="ins-ic">
-                        <i className="fab fa-instagram white-text"> </i>
+                        <i class="white-text"><FontAwesomeIcon icon={faInstagram} /></i>                       
                     </a>
 
                     </div>
@@ -127,13 +128,13 @@ let Footer =() => {
                     <h6 className="text-uppercase font-weight-bold">Contact</h6>
                     <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" styles="width: 60px;" />
                     <p>
-                    <i className="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <i className="mr-3"><FontAwesomeIcon icon={faHome} /></i> New York, NY 10012, US</p>                  
                     <p>
-                    <i className="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <i className="mr-3"><FontAwesomeIcon icon={faEnvelope} /></i> info@example.com</p>
                     <p>
-                    <i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <i className="mr-3"><FontAwesomeIcon icon={faPhone} /></i> + 01 234 567 88</p>
                     <p>
-                    <i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    <i className="mr-3"><FontAwesomeIcon icon={faHome} /></i> + 01 234 567 89</p>
 
                 </div>
                 {/* <!-- Grid column --> */}
